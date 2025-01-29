@@ -12,6 +12,10 @@
     <div class="odd even">
         <p> Given number is <span class="bg-red-500 text-white">{{ countStore.oddOrEven }}</span> </p>
     </div>
+    <div>
+        <h1>Edit counter</h1>
+        <input type="number" class="form-control" v-model="countStore.count">
+    </div>
 </div>
 </template>
 
