@@ -1,15 +1,22 @@
 <template>
+<div>
+    <h1>About</h1>
     <div>
-<h1>About</h1>
+        <button class="btn btn-outline-secondary py text-3xl" @click="countStore.incrementCount(1) ">{{ countStore.count }}</button>
     </div>
+</div>
 </template>
 
-<script>
-    export default {
-        
-    }
+<script setup>
+import { useCounterStore } from '@/stores/counter';
+
+const countStore = useCounterStore();
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+.text-3xl {
+    font-size: 3rem;
+    line-height: 1.2;
 
+}
 </style>
