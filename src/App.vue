@@ -1,21 +1,20 @@
+<template>
+<div class="text-center ">
+    <nav class="mb-4 ">
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/info">info</RouterLink>
+      
+    </nav>
+<RouterView />
+</div>
+</template>
 <script>
 import {
     RouterLink,
     RouterView
 } from 'vue-router'
 </script>
-
-<template>
-<div class="text-center ">
-    <nav class="mb-4 ">
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      
-    </nav>
-<RouterView />
-</div>
-</template>
-
 <style scoped>
 header {
     line-height: 1.5;
