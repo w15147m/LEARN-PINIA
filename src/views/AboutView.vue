@@ -7,6 +7,8 @@
     <div class="pt-2">
         <counter ></counter>
     </div>
+    <button class="btn btn-danger" @click="countStore.$reset">Reset state </button>
+
 </div>
 </template>
 
@@ -15,6 +17,10 @@ import counter from '@/components/counter.vue';
 import { useCounterStore } from '@/stores/counter';
 
 const countStore = useCounterStore();
+
+countStore.$patch({
+    count: countStore.count + 21,
+})
 </script>
 
 <style scoped>
